@@ -22,7 +22,7 @@ TABLE OF CONTENTS
   8.1 [API Connecting][head0801]  
   8.2 [Adding Units][head0802]  
 9. [Licensing][head0900]  
-  10. [Examples][head1000]  
+10. [Examples][head1000]  
   10.1 [1data.csv][head1001]  
   10.2 [2data.csv][head1002]  
   10.3 [3data.csv][head1003]  
@@ -542,6 +542,7 @@ The following are any of the possible documented errors:
 
 Any other errors which occur without a status message are unknown.
 
+[Back to Top][BackToTop]
 
 ### 8.1 API CONNECTING ###
 
@@ -558,6 +559,7 @@ From a desktop view of the CMMS:
    general settings. Change the setting if it is not.  
 7. Click save at the top of the screen.  
 
+[Back to Top][BackToTop]
 
 ### 8.2 ADDING UNITS ###
 
@@ -898,8 +900,8 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
 [head1008]: #108-8datacsv
 [head1009]: #109-configtxt
 [head1010]: #1010-allsensorspy
-[head1011]: #1011-photocell.py
-[head1012]: #1012-temeraturepy
+[head1011]: #1011-photocellpy
+[head1012]: #1012-temperaturepy
 [head1013]: #1013-potentialpy
 [head1100]: #11-change-log
 
