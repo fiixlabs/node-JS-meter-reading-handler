@@ -1,0 +1,90 @@
+CONFIGURATION FILE
+==================
+
+API SETUP
+---------
+0: API URL
+~
+
+1: Application Key
+~
+
+2: Access Key
+~
+
+3: API Secret Key
+~
+
+
+FORMAT SETUP
+------------
+4: Meter Reading Only
+~0
+
+5: Delimiter
+~
+
+6: Quotation Wrapped Data
+~0
+
+7: Automatic Date Reading
+~0
+
+8: Set Default ID
+~
+
+9: Set Default Unit
+~
+
+
+FILE SETUP
+----------
+10: File Name
+~
+
+11: Asset ID Column Header
+~
+
+12: Meter Reading Value Column Header
+~
+
+13: Meter Reading Value Unit Measurement Column Header
+~
+
+14: Date Column Header
+~
+
+15: Work Order ID Column Header
+~
+
+
+EXTERNAL SRIPTS
+---------------
+16: Child Process 1
+~
+
+17: Child Process 2
+~
+
+18: Child Process 3
+~
+
+19: Child Process 4
+~
+
+20: Child Process 5
+~
+
+BATCHING SETUP
+--------------
+21: Maximum Batch Requests per Minute
+~200
+
+22: Time Delay Between Files (in minutes)
+~0
+
+
+RESET
+-----
+23: Reset the File and Position Tracking
+~0
