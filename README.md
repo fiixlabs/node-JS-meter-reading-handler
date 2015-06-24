@@ -842,7 +842,7 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
   * Also added ASCII art of MA CMMS  
 * Improved memory conservation  
   * Program now deletes files after it finishes pushing them to the CMMS  
-  * Program now resets itself to searching for "1&#60;filename\>" after 10000 files  
+  * Program now resets itself to searching for "1&#60;filename\>.csv" after 10000 files  
     * Program also blasts the log file during the reset  
 * Minor bug fixes  
 * Minor internal documentation corrections  
