@@ -58,18 +58,19 @@ v1.4.3 Created June 24, 2015 by Jake Uskoski
 2 INTRODUCTION
 --------------
 
-The Automated Meter Reading File Handler is a program which takes CSV files from
-its designated folder, formats the necessary information, and sends the data to
-the Maintenance Assistant CMMS, through the use of the Maintenance Assistant
-JavaScript API. The program runs as an html page in an internet browser.
-
-For convenience, this program uses Brackets to open and run the html script. A
-file which can run without Brackets is included, and explained in the
-"ALTERNATIVE" section.
+The MA Labs Node JS Automated Meter Reading File Handler is a program which
+takes CSV files from its designated folder, formats the necessary information,
+and sends the data to the Maintenance Assistant CMMS, through the use of the
+Maintenance Assistant JavaScript API. The program runs in the console through
+the use of Node JavaScript.
 
 Before attempting to run the program, please be sure to extract all of the files
-from the "Automated Meter Reading Handler v.1.4.zip" file. The program cannot be
-run from the zip file.
+from the ZIP package. The program cannot be run from the ZIP. The "README.txt"
+file is a stripped version of this README, lacking any markdown code for the
+sake of making it more readable as plain text.
+
+There is no "step-by-step-beginner-guide.txt" for this package. All necessary
+information is included in this README.
 
 
 
@@ -289,6 +290,16 @@ The file setup has five requirements and an optional value:
 File Name refers to the names given to all of the
 files in the "data" folder. The name must include the ".csv" and cannot include
 any numbers. Leaving the File Name empty ("~") results in a fatal error.
+
+IMPORTANT:  
+Once the program reads the 10000th file ("10000<filename>.csv"), it begins
+looking for 1<filename>.csv again. This is so that the file numbering never
+reaches a point where the value is beyond the scope of a number in javascript,
+or a number (int, float, double, etc.) in any other programming language.
+
+Whenever a file is finished being successfully read by the program, it is
+deleted to conserve memory space, therefore external scripts can also loop their
+naming to return to "1<filename>" after "10000<filename>.csv".
 
 
 11: Asset ID Column Header
@@ -797,7 +808,7 @@ v1.4.2
   * Also added ASCII art of MA CMMS  
 * Improved memory conservation  
   * Program now deletes files after it finishes pushing them to the CMMS  
-  * Program now resets itself to searching for "1<filename>" after 1000 files  
+  * Program now resets itself to searching for "1<filename>" after 10000 files  
     * Program also blasts the log file during the reset  
 * Minor bug fixes  
 * Minor internal documentation corrections  
