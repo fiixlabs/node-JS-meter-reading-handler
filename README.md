@@ -482,11 +482,11 @@ are being placed in the "data" folder.
 7 RUNNING
 ---------
 
-Once the configuration file is prepared, open the file "Runnable.html" using the
-Brackets text editor. Then, use the "Live Preview" function, which can be found
-in the File menu. The program will begin running, and if everything is prepared
-properly with a stable internet connection, the program will start sending the
-meter reading data from the CSV files to the CMMS.
+Once the configuration file is prepared, and any external scripts are in place,
+enter the directory containing the "AutoMtrRdnHdlr.node.js" file and run it from
+the command line, through node:
+
+    node AutoMtrRdnHdlr.node.js
 
 [Back to Top][BackToTop]
 <br>
