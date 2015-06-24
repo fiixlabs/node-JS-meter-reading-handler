@@ -36,7 +36,7 @@ TABLE OF CONTENTS
   10.11 [photocell.py][head1011]  
   10.12 [temperature.py][head1012]  
   10.13 [potential.py][head1013]  
-11. [Change Log][head1]  
+11. [Change Log][head1100]  
   [v1.4.3][v143]  
   [v1.4.2][v142]  
   [v1.4.1][v141]  
@@ -421,7 +421,7 @@ the "EXconfig" folder (within the examples folder).
 
 [Back to Top][BackToTop]
 
-### 6.5  BATCH SETUP ###
+### 6.5 BATCH SETUP ###
 
 The batch setup has two requirements:
 
@@ -456,7 +456,7 @@ The value is in minutes, and the default setting is half an hour.
 
 [Back to Top][BackToTop]
 
-### 6.6  RESET ###
+### 6.6 RESET ###
 
 The reset setup has one requirement:
 
@@ -479,8 +479,8 @@ are being placed in the "data" folder.
 [Back to Top][BackToTop]
 <br>
 
-7  RUNNING
-----------
+7 RUNNING
+---------
 
 Once the configuration file is prepared, open the file "Runnable.html" using the
 Brackets text editor. Then, use the "Live Preview" function, which can be found
@@ -491,8 +491,8 @@ meter reading data from the CSV files to the CMMS.
 [Back to Top][BackToTop]
 <br>
 
-8  TROUBLESHOOTING
-------------------
+8 TROUBLESHOOTING
+-----------------
 
 Most errors are reported to the user through the "log.txt" file located in the
 "log" folder. Any server related error can be due to either throttling or
@@ -543,7 +543,7 @@ The following are any of the possible documented errors:
 Any other errors which occur without a status message are unknown.
 
 
-### 8.1  API CONNECTING ###
+### 8.1 API CONNECTING ###
 
 From a desktop view of the CMMS:
 
@@ -559,7 +559,7 @@ From a desktop view of the CMMS:
 7. Click save at the top of the screen.  
 
 
-### 8.2  ADDING UNITS ###
+### 8.2 ADDING UNITS ###
 
 From a desktop view of the CMMS:
 
@@ -578,8 +578,8 @@ From a desktop view of the CMMS:
 [Back to Top][BackToTop]
 <br>
 
-9  LICENSING
-------------
+9 LICENSING
+-----------
 
 Maintenance Assistant Labs Automated Meter Reading File Handler uses the bundled
 package of the Maintenance Assistant CMMS client for JavaScript which is
@@ -877,7 +877,7 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
 [head0500]: #5-setup
 [head0600]: #6-configuration
 [head0601]: #61-api-setup
-[head0602]: #62format-setup
+[head0602]: #62-format-setup
 [head0603]: #63-file-setup
 [head0604]: #64-external-scripts
 [head0605]: #65-batch-setup
@@ -914,17 +914,17 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
 [6206]: #6-quotation-wrapped-data
 [6207]: #7-automatic-date-reading
 [6208]: #8-set-default-id
-[6209]: #9-set-Default-unit
-[6310]: #10-file-Name
+[6209]: #9-set-default-unit
+[6310]: #10-file-name
 [6311]: #11-asset-id-column-header
 [6312]: #12-meter-reading-value-column-header
 [6313]: #13-meter-reading-value-unit-measurement-column-header
 [6314]: #14-date-column-header
-[6315]: #15-work-order-iD-column-header
-[6521]: #21-maximum-batch-Requests-per-minute
+[6315]: #15-work-order-id-column-header
+[6521]: #21-maximum-batch-requests-per-minute
 [6522]: #22-time-delay-between-files
 
-[BackToTop]: #ma-labs-node-js-meter-reading-file-handler-v1
+[BackToTop]: #ma-labs-node-js-meter-reading-file-handler-v14
 
 [nodejs]: https://nodejs.org/download/
 [maAPIdoc]: https://www.maintenanceassistant.com/api/docs/guide.html
