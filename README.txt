@@ -162,8 +162,7 @@ errors which will prevent the program from reading the config.txt file. To
 prevent any errors from occurring within the configuration, avoid using, adding,
 and deleting tildes.
 
-For example files using the various optional unrequired settings, see section
-11.
+For example files using the various optional settings, see section 11.
 
 
 6.1 API SETUP
@@ -403,7 +402,7 @@ The external scripts has five open slots:
 
 The child processes are commands which will be run at the start of the program,
 and will end when the program ends. The commands are called through the command
-line, and if they are meant to run permanentlyin a loop, they should be
+line, and if they are meant to run permanently in a loop, they should be
 structured to do so on their own. Once called, the program will never interact
 with the child processes again until closing.
 
@@ -694,9 +693,9 @@ therefore must have it set by the main program's configuration.
 -------------------
 
 The "allSensors.py" file is a program which takes the readings of a photocell,
-LM35DZ temperature sensor, and potentiameter, which are connected through a
+LM35DZ temperature sensor, and potentiometer, which are connected through a
 MCP3008 chip for analog readings. The photocell is set to the first pin,
-followed by the temperature sensor to the second pin and the potentiameter to
+followed by the temperature sensor to the second pin and the potentiometer to
 the third pin. The example temperature sensor used during testing needed a
 minimum of four volts, and so the MCP3008 chip was connected to a five volt line
 for power.
@@ -704,7 +703,7 @@ for power.
 The program must first be moved to the main folder where the
 "AutoMtrRdnHdlr.node.js" file is located in order to use it.
 
-To reset the script's file naming back to "1data.csv", open the filed named
+To reset the script's file naming back to "1data.csv", open the file named
 "config" in the "scratch" folder. Set the number to "1", save the file, and
 close it. Doing so will reset all of the example scripts, since each one uses
 the "config" file in the "scratch" folder. 
@@ -728,7 +727,7 @@ This script is meant to run simultaneously alongside the "temperature.py" and
 "potential.py" scripts.It must first be moved to the main folder where
 the "AutoMtrRdnHdlr.node.js" file is located in order to use it.
 
-To reset the script's file naming back to "1data.csv", open the filed named
+To reset the script's file naming back to "1data.csv", open the file named
 "config" in the "scratch" folder. Set the number to "1", save the file, and
 close it. Doing so will reset all of the example scripts, since each one uses
 the "config" file in the "scratch" folder.
@@ -752,7 +751,7 @@ This script is meant to run simultaneously alongside the "photocell.py" and
 "potential.py" scripts.It must first be moved to the main folder where
 the "AutoMtrRdnHdlr.node.js" file is located in order to use it.
 
-To reset the script's file naming back to "1data.csv", open the filed named
+To reset the script's file naming back to "1data.csv", open the file named
 "config" in the "scratch" folder. Set the number to "1", save the file, and
 close it. Doing so will reset all of the example scripts, since each one uses
 the "config" file in the "scratch" folder.
@@ -768,15 +767,15 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
 ------------------
 
 The "potential.py" file is a program which takes the readings of a
-potentiameter, which is connected through a MCP3008 chip for analog readings.
-The potentiameter needs to be connected to the third pin of the MCP3008 chip for
+potentiometer, which is connected through a MCP3008 chip for analog readings.
+The potentiometer needs to be connected to the third pin of the MCP3008 chip for
 the script to run.
 
 This script is meant to run simultaneously alongside the "photocell.py" and
 "temperature.py" scripts.It must first be moved to the main folder where
 the "AutoMtrRdnHdlr.node.js" file is located in order to use it.
 
-To reset the script's file naming back to "1data.csv", open the filed named
+To reset the script's file naming back to "1data.csv", open the file named
 "config" in the "scratch" folder. Set the number to "1", save the file, and
 close it. Doing so will reset all of the example scripts, since each one uses
 the "config" file in the "scratch" folder.
@@ -794,7 +793,7 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
 v1.4.3
 ------
 * Updated the "README.txt" file to reflect recent changes  
-  * Added the example python scrips  
+  * Added the example python scripts  
   * Added the external scripts section of the configuration  
 * Added example python programs  
 * Prepared for hosting on GitHub  

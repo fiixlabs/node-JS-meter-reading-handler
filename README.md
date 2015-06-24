@@ -83,7 +83,7 @@ information is included in this README.
 
 1. Node JS  
   * See Installation section  
- 2. Additional node packages  
+2. Additional node packages  
   * See Installation section  
 3. A stable internet connection  
 4. Python 2.7.4  
@@ -172,8 +172,7 @@ errors which will prevent the program from reading the config.txt file. To
 prevent any errors from occurring within the configuration, avoid using, adding,
 and deleting tildes.
 
-For example files using the various optional unrequired settings, see section
-11.
+For example files using the various optionald settings, see section 11.
 
 [Back to Top][BackToTop]
 
@@ -426,7 +425,7 @@ The external scripts has five open slots:
 
 The child processes are commands which will be run at the start of the program,
 and will end when the program ends. The commands are called through the command
-line, and if they are meant to run permanentlyin a loop, they should be
+line, and if they are meant to run permanently in a loop, they should be
 structured to do so on their own. Once called, the program will never interact
 with the child processes again until closing.
 
@@ -660,7 +659,7 @@ Meter Reading Only" (see section 6.2). It is assumed for this file that setting
 
 ### 10.3 3data.csv ###
 
-The "[3data.csv][2data]" file is an example file using the optional setting "5:
+The "[3data.csv][3data]" file is an example file using the optional setting "5:
 Delimiter" (see section 6.2). It is assumed for this file that setting 5 has
 been set to "^", and no other optional settings are in use.
 
@@ -676,7 +675,7 @@ setting 6 is turned on, and no other optional settings are in use.
 
 ### 10.5 5data.csv ###
 
-The "[5data.csv][4data]" file is an example file using the optional toggle setting "7:
+The "[5data.csv][5data]" file is an example file using the optional toggle setting "7:
 Automatic Date Reading" (see section 6.2). It is assumed for this file that
 setting 7 is turned on, and no other optional settings are in use.
 
@@ -684,7 +683,7 @@ setting 7 is turned on, and no other optional settings are in use.
 
 ### 10.6 6data.csv ###
 
-The "[6data.csv][5data]" file is an example file using the optional setting "8: Set
+The "[6data.csv][6data]" file is an example file using the optional setting "8: Set
 Default ID" (see section 6.2). It is assumed for this file that setting 8 has a
 valid asset ID entered, and no other optional settings are in use.
 
@@ -692,7 +691,7 @@ valid asset ID entered, and no other optional settings are in use.
 
 ### 10.7 7data.csv ###
 
-The "[7data.csv][6data]" file is an example file using the optional setting "9: Set
+The "[7data.csv][7data]" file is an example file using the optional setting "9: Set
 Default Unit" (see section 6.2). It is assumed for this file that setting 9 has
 a valid unit (registered in the CMMS) entered, and no other optional settings
 are in use.
@@ -701,7 +700,7 @@ are in use.
 
 ### 10.8 8data.csv ###
 
-The "[8data.csv][7data]" file is an example file using the optional setting "14: Work
+The "[8data.csv][8data]" file is an example file using the optional setting "14: Work
 Order ID Column Header" (see section 6.3). It is assumed for this file that
 setting 14 has a valid header name entered, and no other optional settings are
 in use.
@@ -710,7 +709,7 @@ in use.
 
 ### 10.9 config.txt ###
 
-The "[config.txt][8data]" file is an example for using both the optional setting "8: Set
+The "[config.txt][config]" file is an example for using both the optional setting "8: Set
 Default ID" (see section 6.2) and the "allSensors.py" example external script.
 The URL and keys given are placeholders, and are not real. Only the API URL
 resembles a legitimate value for the setting.
@@ -724,9 +723,9 @@ therefore must have it set by the main program's configuration.
 ### 10.10 allSensors.py ###
 
 The "[allSensors.py][allSens.py]" file is a program which takes the readings of a photocell,
-LM35DZ temperature sensor, and potentiameter, which are connected through a
+LM35DZ temperature sensor, and potentiometer, which are connected through a
 MCP3008 chip for analog readings. The photocell is set to the first pin,
-followed by the temperature sensor to the second pin and the potentiameter to
+followed by the temperature sensor to the second pin and the potentiometer to
 the third pin. The example temperature sensor used during testing needed a
 minimum of four volts, and so the MCP3008 chip was connected to a five volt line
 for power.
@@ -734,7 +733,7 @@ for power.
 The program must first be moved to the main folder where the
 "AutoMtrRdnHdlr.node.js" file is located in order to use it.
 
-To reset the script's file naming back to "1data.csv", open the filed named
+To reset the script's file naming back to "1data.csv", open the file named
 "[config][ScrCon]" in the "scratch" folder. Set the number to "1", save the file, and
 close it. Doing so will reset all of the example scripts, since each one uses
 the "config" file in the "scratch" folder.
@@ -754,7 +753,7 @@ which is connected through a MCP3008 chip for analog readings. The photocell
 needs to be connected to the first pin of the MCP3008 chip for the script to
 run.
 
-To reset the script's file naming back to "1data.csv", open the filed named
+To reset the script's file naming back to "1data.csv", open the file named
 "[config][ScrCon]" in the "scratch" folder. Set the number to "1", save the file, and
 close it. Doing so will reset all of the example scripts, since each one uses
 the "config" file in the "scratch" folder.
@@ -782,7 +781,7 @@ This script is meant to run simultaneously alongside the "[photocell.py][photo.p
 "[potential.py][potent.py]" scripts. It must first be moved to the main folder where
 the "AutoMtrRdnHdlr.node.js" file is located in order to use it.
 
-To reset the script's file naming back to "1data.csv", open the filed named
+To reset the script's file naming back to "1data.csv", open the file named
 "[config][ScrCon]" in the "scratch" folder. Set the number to "1", save the file, and
 close it. Doing so will reset all of the example scripts, since each one uses
 the "config" file in the "scratch" folder.
@@ -798,15 +797,15 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
 ### 10.13 potential.py ###
 
 The "[potential.py][potent.py]" file is a program which takes the readings of a
-potentiameter, which is connected through a MCP3008 chip for analog readings.
-The potentiameter needs to be connected to the third pin of the MCP3008 chip for
+potentiometer, which is connected through a MCP3008 chip for analog readings.
+The potentiometer needs to be connected to the third pin of the MCP3008 chip for
 the script to run.
 
 This script is meant to run simultaneously alongside the "[photocell.py][photo.py]" and
 "[temperature.py][temp.py]" scripts. It must first be moved to the main folder where
 the "AutoMtrRdnHdlr.node.js" file is located in order to use it.
 
-To reset the script's file naming back to "1data.csv", open the filed named
+To reset the script's file naming back to "1data.csv", open the file named
 "[config][ScrCon]" in the "scratch" folder. Set the number to "1", save the file, and
 close it. Doing so will reset all of the example scripts, since each one uses
 the "config" file in the "scratch" folder.
@@ -826,7 +825,7 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
 ### v1.4.3 ###
 
 * Updated the "README.txt" file to reflect recent changes  
-  * Added the example python scrips  
+  * Added the example python scripts  
   * Added the external scripts section of the configuration  
 * Added example python programs  
 * Prepared for hosting on GitHub  
@@ -960,6 +959,8 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
 [6data]: examples/EXdata/6data.csv
 [7data]: examples/EXdata/7data.csv
 [8data]: examples/EXdata/8data.csv
+
+[config]: EXconfig/config.txt
 
 [allSens.py]: examples/EXpython/allSensors.py
 [photo.py]: examples/EXpython/photocell.py
