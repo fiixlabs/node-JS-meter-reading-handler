@@ -1,5 +1,5 @@
-MA Labs Node JS Meter Reading File Handler v1.4
------------------------------------------------
+Node JS Meter Reading File Handler v1.4
+---------------------------------------
 - - -
 
 TABLE OF CONTENTS
@@ -37,6 +37,7 @@ TABLE OF CONTENTS
   10.12 [temperature.py][head1012]  
   10.13 [potential.py][head1013]  
 11. [Change Log][head1100]  
+  [v1.4.4][v144]  
   [v1.4.3][v143]  
   [v1.4.2][v142]  
   [v1.4.1][v141]  
@@ -54,6 +55,7 @@ v1.4.0 Created June 4,  2015 by Jake Uskoski
 v1.4.1 Created June 8,  2015 by Jake Uskoski  
 v1.4.2 Created June 11, 2015 by Jake Uskoski  
 v1.4.3 Created June 24, 2015 by Jake Uskoski  
+v1.4.4 Created Aug 25,  2016 by Jake Uskoski
 
 [Back to Top][BackToTop]
 <br>
@@ -61,11 +63,10 @@ v1.4.3 Created June 24, 2015 by Jake Uskoski
 2 INTRODUCTION
 --------------
 
-The MA Labs Node JS Automated Meter Reading File Handler is a program which
+The Node JS Automated Meter Reading File Handler is a program which
 takes CSV files from its designated folder, formats the necessary information,
-and sends the data to the Maintenance Assistant CMMS, through the use of the
-Maintenance Assistant JavaScript API. The program runs in the console through
-the use of Node JavaScript.
+and sends the data to your CMMS, through the use of the Fiix JavaScript API. The
+program runs in the console through the use of Node JavaScript.
 
 Before attempting to run the program, please be sure to extract all of the files
 from the ZIP package. The program cannot be run from the ZIP. The "README.txt"
@@ -89,6 +90,8 @@ information is included in this README.
 4. Python 2.7.4  
   * Only required if using the example programs or programming in python  
     * Comes installed on the Raspberry Pi's Raspbian operating system  
+5. Fiix
+  * Available at [www.fiixsoftware.com][fiix]
 
 [Back to Top][BackToTop]
 <br>
@@ -187,7 +190,7 @@ The API setup has four requirements:
 
 To learn about getting your API keys, go to the web page:
 
-&nbsp;&nbsp;&nbsp;[https://www.maintenanceassistant.com/api/docs/guide.html][maAPIdoc]
+&nbsp;&nbsp;&nbsp;[https://www.fiixsoftware.com/api/docs/guide.html][maAPIdoc]
 
 and see the section "Getting your API Access Keys".
 
@@ -596,9 +599,9 @@ From a desktop view of the CMMS:
 9 LICENSING
 -----------
 
-Maintenance Assistant Labs Automated Meter Reading File Handler uses the bundled
-package of the Maintenance Assistant CMMS client for JavaScript which is
-available under the Apache License 2.0. For more information, see the files:
+The Automated Meter Reading File Handler uses the bundled package of the Fiix
+client for JavaScript which is available under the Apache License 2.0. For more
+information, see the files:
 
 &nbsp;&nbsp;&nbsp;[LICENSE.txt][licensetxt]  
 &nbsp;&nbsp;&nbsp;[NOTICE.txt][noticetxt]  
@@ -822,6 +825,12 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
 11 CHANGE LOG
 -------------
 
+### v1.4.4 ###
+
+* Updated documentation and files to reflect rebranding
+
+[Back to Top][BackToTop]
+
 ### v1.4.3 ###
 
 * Updated the "README.txt" file to reflect recent changes  
@@ -918,6 +927,7 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
 [head1013]: #1013-potentialpy
 [head1100]: #11-change-log
 
+[v144]: #v144
 [v143]: #v143
 [v142]: #v142
 [v141]: #v141
@@ -939,10 +949,11 @@ Steps for enabling SPI and installing the spidev wrapper used can be found here:
 [6521]: #21-maximum-batch-requests-per-minute
 [6522]: #22-time-delay-between-files
 
-[BackToTop]: #ma-labs-node-js-meter-reading-file-handler-v14
+[BackToTop]: #node-js-meter-reading-file-handler-v14
 
+[fiix]: https://www.fiixsoftware.com
 [nodejs]: https://nodejs.org/download/
-[maAPIdoc]: https://www.maintenanceassistant.com/api/docs/guide.html
+[maAPIdoc]: https://www.fiixsoftware.com/api/docs/guide.html
 [RFC2822]: https://tools.ietf.org/html/rfc2822#page-14
 [ISO8601]: https://www.w3.org/TR/NOTE-datetime-970915.html
 [mitLicense]: https://tldrlegal.com/license/mit-license
